@@ -1,0 +1,94 @@
+/*
+		Class:  CS 125H
+		Assign: Lab 5
+		Student: kaevin barta
+*/
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+a { font-weight: bold; }
+a:link { color: blue; }
+a:visited { color: dodgerblue;}
+a:hover, a:focus { color: darkslateblue; }
+ul {
+	line-height: 1.5;
+	margin: 20px;
+	padding-left: 20px;
+	text-align: center;
+}
+li, p {
+	font-size: 95%;
+	text-align: center;
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+}
+.left {
+	float: left;/*little messed up right now but will get fixed*/
+	padding-right: 20px;
+}
+
+/* the styles for the main content */
+main {
+	margin-top: 150px;
+	clear: left;
+}
+h2 {
+	color: dodgerblue;
+	text-align: center;
+	font-size: 220%;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 20px;
+}
+main h3 {
+	padding-top: 50px;
+	color: dodgerblue;
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+main p.indent {
+	text-indent: 2em;
+	margin-bottom: 50px;
+}
+#main-title {
+	color: dodgerblue;
+	text-align: center;
+	text-shadow: 2px 2px 2px yellow;
+}
+#little-text {/*this is for the little link at the top*/
+	font-family: 'Comic Sans MS';
+	padding-left: 50px;
+}
+.highlight {
+	padding-left: 400px;
+	width: 1100px;
+}
+.image-row img{
+	display: inline-block;/*for side by side affect*/
+	margin-right: 100px;
+	vertical-align: top;
+	width: 200px;
+	
+}
+.image-row {
+	margin-left: 300px;/*to center the img box*/
+}
+/* the styles for the footer */
+footer p {
+	font-size: 80%
+}
+header {
+	position: fixed;
+	top: 0; /* Position it at the top */
+	left: 0; 
+	width: 100%; 
+	background-color: white; 
+	padding: 1em; 
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/*adds depth*/
+}
