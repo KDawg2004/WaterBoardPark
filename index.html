@@ -3,36 +3,81 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Oregon City Bluff</title>
-	<!--Kaevin Barta 10/7/2024 CS 125H-Lab 5-->
+	<!--Kaevin Barta 11/26/2024 CS 125H-FINAL 10-->
 	<link rel="shortcut icon" href="images/betterBanner.png">
 	<link rel="stylesheet" href="styles/main.css">
+	<!--Nav bar hamburger menu I took from the text book-->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
 </head>
 
 <body>
 	<header>
-		<img src="images/banner.jpg" alt="Oregon State Flag" width="100" >
-		<h1 id="main-title" >Water Board Park</h1>
-		<p id="little-text"><small>Check out additional resources like <a href="https://oregoncityparksfoundation.org/initiatives/">Oregon City Parks</a></small></p>
+		<img src="images/banner.jpg" alt="Oregon State Flag" width="100">
+		<h1 id="main-title">Water Board Park</h1>
 	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="https://oregoncityparksfoundation.org/initiatives/">OC Parks</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="#">Parks & Rec</a></li>
+			<li>
+				<a href="AboutUs.html">About Us</a>
+				<ul>
+					<li><a href="#">Park history</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Volunteer</a></li>
+					<li><a href="#">Donate</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
 	<main>
-		<hr>
 		<h2>Enhancing Our Parks</h2>
-		<p class="highlight indent" ><em>Water Board Park</em> in Oregon City is a fun recreational space that has become a <strong>favorite</strong> for locals and visitors. Established in the early 20th century, the park features various hiking and biking trails that offer a chance to explore its natural beauty. The park also includes picnic areas, and quite spots for relaxing. Its said by locals to be <q>One of the most historical parks in Oregon City.</q></p>
-		<img class="left" src="images/mainPic.jpeg" alt="Looking up from the bottom of the trail, trees and broken road" width="400" >
+		<p class="highlight indent"><em>Water Board Park</em> in Oregon City is a fun recreational space that has become a <strong>favorite</strong> for locals and visitors. Established in the early 20th century, the park features various hiking and biking trails that offer a chance to explore its natural beauty. The park also includes picnic areas, and quite spots for relaxing. Its said by locals to be <q>One of the most historical parks in Oregon City.</q></p>
+		<img class="left" src="images/mainPic.jpeg" alt="Looking up from the bottom of the trail, trees and broken road" width="400">
 		<h2>Park Rules</h2>
 		<ul>
-			<li>Parks are closed from 10 pm to 5 am It is unlawful for persons to be in the parks between these hours</li>
+			<li>Parks are closed from 10 pm to 5 am It is unlawful for persons to be in the parks between these hours<br></li>
 			<li>Pets are welcome but must be leashed, and please clean up after your pets</li>
 			<li><strong>Alcohol</strong> is not permitted in Oregon City Parks</li>
 			<li>Motorized vehicles, electric bikes, or other power-operated vehicles are prohibited on park property</li>
 			<li>You are responsible for your litter-if you cannot find a trash disposal bin, please follow the "pack it out" policy</li>
 		</ul>
+		<h2 id="table">Herbicide Spray Schedule</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Sprayed By</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>June 5, 2018</td>
+					<td>Franco Restoration</td>
+				</tr>
+				<tr>
+					<td>October 3, 2018</td>
+					<td>Franco Restoration</td>
+				</tr>
+			</tbody>
+		</table>
 		<h3>Location</h3>
 		<p class="highlight indent">The park has an upper entrace at <strong>921 Waterboard Park Road</strong>. The end of the trail is located at <strong>200 S John Adams Street</strong>, there are no other entrances at the park. Parking spots are not accomedated so please be mindful to the people who live there. When entering the park from the upper entrance be causious of holes and cliffs. Nearing the middle of the trail you will be greeted with two paths, the one on the right leads to the exit. However the one on the left will lead you into big boulders and caves you can explore. the left trail extends a quater mile into the forest before having to turn around. The left trail is not frequented by many so be aware of your surrondings.</p>
 		<div class="image-row">
-			<img src="images/overlook.jpg" alt="Top of trail over looking bluff"  >
-			<img src="images/brokenStreet.jpg"  alt="Top of trail over broken road">
+			<img src="images/overlook.jpg" alt="Top of trail over looking bluff">
+			<img src="images/brokenStreet.jpg" alt="Top of trail over broken road">
 			<img src="images/WaterBoardMap.png" alt="Map detailing the trail">
 			<img src="images/EntranceWater_board_Park.jpeg" alt="Looking up into the park from the bottom">
 		</div>

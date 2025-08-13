@@ -1,23 +1,21 @@
 /*
 		Class:  CS 125H
-		Assign: Lab 5
+		Assign: FINAL 10
 		Student: kaevin barta
 */
-/* the styles for the elements */
+/* the styles for the body elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
 }
-a { font-weight: bold; }
-a:link { color: blue; }
-a:visited { color: dodgerblue;}
-a:hover, a:focus { color: darkslateblue; }
+
 ul {
 	line-height: 1.5;
 	margin: 20px;
-	padding-left: 20px;
+	padding-left: 0px;
 	text-align: center;
 }
+
 li, p {
 	font-size: 95%;
 	text-align: center;
@@ -26,18 +24,27 @@ li, p {
 /* the styles for the header */
 header img {
 	float: left;
+	max-width: 100%;
+	height: auto;
 }
 .left {
-	float: left;/*little messed up right now but will get fixed*/
-	padding-right: 20px;
+	float: left;
+	
+}
+/*First image in body*/
+main img {
+	max-width: 100%; 
+	height: auto;
+	width: auto;
 }
 
 /* the styles for the main content */
 main {
-	margin-top: 150px;
+	margin-top: 50px;
 	clear: left;
 }
 h2 {
+	
 	color: dodgerblue;
 	text-align: center;
 	font-size: 220%;
@@ -45,9 +52,9 @@ h2 {
 	margin-bottom: 20px;
 }
 main h3 {
-	padding-top: 50px;
+	padding-top: 100px;
 	color: dodgerblue;
-	font-size: 130%;
+	font-size: 1.5rem;
 	font-style: italic;
 	text-align: center;
 	text-shadow: 2px 2px 2px black;
@@ -56,39 +63,210 @@ main p.indent {
 	text-indent: 2em;
 	margin-bottom: 50px;
 }
+p {
+	max-width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
 #main-title {
 	color: dodgerblue;
 	text-align: center;
-	text-shadow: 2px 2px 2px yellow;
-}
-#little-text {/*this is for the little link at the top*/
-	font-family: 'Comic Sans MS';
-	padding-left: 50px;
+	text-shadow: 2px 2px 2px black;
 }
 .highlight {
-	padding-left: 400px;
 	width: 1100px;
+	padding-bottom: 50px;
+	
 }
+
 .image-row img{
 	display: inline-block;/*for side by side affect*/
 	margin-right: 100px;
 	vertical-align: top;
-	width: 200px;
+	height: auto;
+	max-width: 200px;
+	width: 100%;
 	
 }
 .image-row {
-	margin-left: 300px;/*to center the img box*/
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 20px;
+	width: 100%;
 }
+
 /* the styles for the footer */
 footer p {
 	font-size: 80%
 }
 header {
-	position: fixed;
-	top: 0; /* Position it at the top */
-	left: 0; 
-	width: 100%; 
-	background-color: white; 
-	padding: 1em; 
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/*adds depth*/
+	padding: 1em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*adds depth*/
+}
+
+/*NAV MENU*/
+#nav_menu ul {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+a {
+	font-weight: bold;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: dodgerblue;
+}
+
+a:hover, a:focus {
+	color: darkslateblue;
+	font-style: italic;
+}
+
+#nav_menu ul li {
+	flex-basis: 20%;
+}
+
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: darkblue;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: yellow;
+}
+
+#nav_menu {
+	position: relative;
+	background-color: darkblue;
+	padding: 10px 0;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 85%;
+	z-index: 1000;
+}
+
+#nav_menu ul ul li {
+	background-color: darkblue;
+	float: none;
+	display: block;
+	position: relative;
+}
+
+#nav_menu ul li:hover > ul, #nav_menu ul ul:hover {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+}
+
+#nav_menu ul ul li a {
+	margin-left: 10px;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+}
+#mobile_menu {
+	display: none;
+}
+
+/*TABLE*/
+table {
+	width: 15%;
+	border-collapse: collapse;/*line together*/
+	background-color: #fff;
+	border: 1px solid black;
+	margin: 0 auto; /* Center the table */
+	margin-bottom: 50px;
+}
+thead {
+	background-color: dodgerblue;
+	color: white;
+}
+
+th, td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 2px solid double;
+}
+#table {
+margin-top: 100px;
+}
+tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+/*CONTACT FORM*/
+form {
+	border: 1px solid black;
+	padding: 15px;
+	margin: 20px auto;
+	width: 80%;
+	max-width: 500px;
+	background-color: #eaeaea;
+}
+fieldset {
+	border: 1px solid DodgerBlue;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+legend {
+	color: DodgerBlue;
+	font-weight: bold;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/*FONTS*/
+@media (max-width: 1024px) {
+	body {
+		font-size: 90%;
+	}
+
+	h2 {
+		font-size: 180%;
+	}
+}
+/*MOblie/Tablets*/
+@media (max-width: 648px) {
+	body {
+		font-size: 80%;
+	}
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		background-color: darkblue !important;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	h2 {
+		font-size: 150%;
+	}
 }
